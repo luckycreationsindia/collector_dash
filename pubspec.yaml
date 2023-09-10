@@ -1,0 +1,40 @@
+name: collector_dash
+description: A simple game in Flutter
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.3
+  build_runner:
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/images/game/
+
+flutter_launcher_icons:
+  web:
+    generate: true
+    image_path: "assets/images/game/dash_center.png"
+    background_color: "#000000"
+    theme_color: "#151928"
+  windows:
+    generate: true
+    image_path: "assets/images/game/dash_center.png"
+    icon_size: 256
+  macos:
+    generate: true
+    image_path: "assets/images/game/dash_center.png"
+    remove_alpha_ios: true
